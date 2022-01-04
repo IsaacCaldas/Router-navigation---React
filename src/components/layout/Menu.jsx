@@ -1,6 +1,7 @@
 import './Menu.css'
 
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default props => {
 
@@ -9,11 +10,11 @@ export default props => {
     <aside className="menu">
       <nav>
         <ul>
-          <li>
-            <a href="/">Início</a>
+          <li> {/* A tag LINK, cria uma tag 'a' */}
+            <Link to="/">Início</Link>
           </li>
           <li>
-            <a href="/">Sobre</a>
+            <Link to="/about">Sobre</Link>
           </li>
         </ul>
       </nav>
