@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import About from '../../views/examples/About'
 import Home from '../../views/examples/Home'
 import Param from '../../views/examples/Param'
+import NotFound from '../../views/examples/NotFound'
 
 export default props => {
 
@@ -21,6 +22,9 @@ export default props => {
         </Route>
         <Route path='/param/:id'>
           <Param />
+        </Route> {/* o '*' serve para que qualquer rota diferentes das programadas, caia em uma rota padrão. No caso será uma rota com a página que contém o erro 404. */}
+        <Route path='*'>
+          <NotFound />
         </Route>
       </Switch>
     </main>
