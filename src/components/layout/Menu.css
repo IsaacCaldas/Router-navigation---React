@@ -1,5 +1,5 @@
 .menu {
-  background-color: #7d9aa5;
+  background-color: #4b616a;
 
   display: flex;
   flex-basis: 200px;
@@ -27,7 +27,7 @@
 .menu li a {
   text-decoration: none;
   color: #ddd;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
   flex: 1;
 
