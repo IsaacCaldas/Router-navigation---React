@@ -1,0 +1,42 @@
+.menu {
+  background-color: #7d9aa5;
+
+  display: flex;
+  flex-basis: 200px;
+}
+
+/* Navbar */
+
+.menu nav {
+  flex: 1;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  display: flex;
+
+  flex: 1;
+  margin-left: 13px;
+  margin-bottom: 6px;
+}
+.menu li:nth-child(1){
+  margin-top: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1.3rem;
+
+  flex: 1;
+
+  transition: 0.1s linear;
+}
+.menu li a:hover {
+  color: #fff;
+  margin-left: 3px;
+}
+.menu li a:active {
+  color: #fff;
+}
